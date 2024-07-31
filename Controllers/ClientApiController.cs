@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
