@@ -1,0 +1,16 @@
+--create a new project folder
+--open it in vs code
+--create a boiler plate project by typing this in the project's terminal: 
+    dotnet new webapi --use-controllers
+--download Microsoft.Data.Sqlite version 8.0.0 (from nuget)
+--download Sqlite extension
+--create a database by creating xData.db file in the root directory and modify it
+-- CTRL + SHIFT + P and then Type in sqlite:Open database
+    sqlite: Run Query
+
+--Download Dapper (search in nuget)
+
+--run project:
+    dotnet watch run
+
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\pengwin-learning-dapper.props" />
+</Project>
