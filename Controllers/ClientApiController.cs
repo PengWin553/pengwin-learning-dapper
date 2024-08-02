@@ -23,6 +23,20 @@ namespace pengwin_learning_dapper.Controllers
             return Ok(result);
         }
 
+        // for the update function
+        [HttpGet("GetClient")]
+        public async Task<ActionResult<Client>> GetClients(int id){
+
+            const string query = "Select * from Client where Id = @id LIMIT 1";
+            var result  = await _connection.QueryFirstAsync<Client>(query, new {id = id});
+            
+            if(result == null)
+                return BadRequest("alskjdfalskjf");
+
+            return Ok(result);
+        }
+
+
         [HttpPost("SaveClient")]
         public async Task<IActionResult> SaveClientAsync(Client client){
             
